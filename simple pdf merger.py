@@ -1,14 +1,5 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[ ]:
-
-
+# The following line is only for if the PDF module doesn't exist already on the server / device.
 # pip install pdfmerger
-
-
-# In[ ]:
-
 
 from pathlib import Path
 from PyPDF2 import PdfMerger
@@ -60,4 +51,3 @@ else:
     print("\n✅ Merge complete!")
     print(f"📄 Merged PDF name : {output_name}")
     print(f"📁 Saved location  : {output_path.resolve()}")
-
